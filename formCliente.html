@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Cliente</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container tamanhoForm">
+            <form action="inserirCliente.php" method="POST">
+                <h3>Cadastro de Cliente</h3>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nome</label>
+                    <input type="text" class="form-control" name="nomeCliente" placeholder="Digite o seu nome" required>
+
+                </div>
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="text" class="form-control" name="telCliente" placeholder="Digite o seu telefone" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Gênero</label>
+                    <select class="form-control" name="genCliente">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço de email</label>
+                    <input type="email" class="form-control" name="emailCliente" placeholder="Digite o seu email">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço</label>
+                    <input type="text" class="form-control" name="endCliente" placeholder="Digite o seu endereço" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label>CPF</label>
+                    <input type="text" class="form-control" name="cpfCliente" placeholder="Digite o seu CPF" required>
+
+                </div>
+
+                <div class="botao">
+                    <button type="submit" class="btn btn-secondary">Cadastrar</button>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
